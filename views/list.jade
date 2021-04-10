@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  each card in cards
+    - var i = 0
+    while i < card.count
+      - i++
+      .card
+        .inner
+          .manacost= card.manacost
+          .title= card.name
+          .type= card.type
+          .text!= card.text
+          .pt= card.pt

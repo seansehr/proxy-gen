@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="/build", method="post")
+    textarea(name="decklist")
+    input(type="submit")
